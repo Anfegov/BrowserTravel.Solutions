@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Infrastructure", "BrowserTravel.Solutions.Infrastructure\BrowserTravel.Solutions.Infrastructure.csproj", "{DCA69A48-1B58-4289-9B64-4A760BEE6BA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Domain.Tests", "BrowserTravel.Solutions.Domain.Tests\BrowserTravel.Solutions.Domain.Tests.csproj", "{7243AAFF-1FA3-49E9-ADAA-8AF0869149DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Domain", "BrowserTravel.Solutions.Domain\BrowserTravel.Solutions.Domain.csproj", "{4037A260-7720-4FFD-84C7-EAC6A8C6765C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Application", "BrowserTravel.Solutions.Application\BrowserTravel.Solutions.Application.csproj", "{2270DED8-4801-44D1-9B89-0856B31DD025}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Api.Tests", "BrowserTravel.Solutions.Api.Tests\BrowserTravel.Solutions.Api.Tests.csproj", "{850E4BFE-60AA-4CDE-9891-8542EE1AEF43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserTravel.Solutions.Api", "BrowserTravel.Solutions.Api\BrowserTravel.Solutions.Api.csproj", "{8081573C-9B6D-4759-9AA9-6607638FAD3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCA69A48-1B58-4289-9B64-4A760BEE6BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA69A48-1B58-4289-9B64-4A760BEE6BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA69A48-1B58-4289-9B64-4A760BEE6BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA69A48-1B58-4289-9B64-4A760BEE6BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7243AAFF-1FA3-49E9-ADAA-8AF0869149DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7243AAFF-1FA3-49E9-ADAA-8AF0869149DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7243AAFF-1FA3-49E9-ADAA-8AF0869149DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7243AAFF-1FA3-49E9-ADAA-8AF0869149DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4037A260-7720-4FFD-84C7-EAC6A8C6765C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4037A260-7720-4FFD-84C7-EAC6A8C6765C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4037A260-7720-4FFD-84C7-EAC6A8C6765C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4037A260-7720-4FFD-84C7-EAC6A8C6765C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2270DED8-4801-44D1-9B89-0856B31DD025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2270DED8-4801-44D1-9B89-0856B31DD025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2270DED8-4801-44D1-9B89-0856B31DD025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2270DED8-4801-44D1-9B89-0856B31DD025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{850E4BFE-60AA-4CDE-9891-8542EE1AEF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{850E4BFE-60AA-4CDE-9891-8542EE1AEF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{850E4BFE-60AA-4CDE-9891-8542EE1AEF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{850E4BFE-60AA-4CDE-9891-8542EE1AEF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8081573C-9B6D-4759-9AA9-6607638FAD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8081573C-9B6D-4759-9AA9-6607638FAD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8081573C-9B6D-4759-9AA9-6607638FAD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8081573C-9B6D-4759-9AA9-6607638FAD3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {256AB6E8-92DB-4985-9BB2-1EE1D4F9BD1E}
+	EndGlobalSection
+EndGlobal

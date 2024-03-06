@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "b0bddb5c-c2b6-46d6-93d7-bd207881aec7",
+		"name": "BrowserTravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32932094",
+		"_collection_link": "https://red-star-215377.postman.co/workspace/QServices_net~a828f2f4-7a97-4be4-83eb-c89687b67015/collection/32932094-b0bddb5c-c2b6-46d6-93d7-bd207881aec7?action=share&source=collection_link&creator=32932094"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/user/Login?userName=Administrador1&password=Administrador1%21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"user",
+								"Login"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Administrador1"
+								},
+								{
+									"key": "password",
+									"value": "Administrador1%21"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"renault verde\",\r\n    \"model\": \"2021\",\r\n    \"plate\": \"asd456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5291/api/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/vehicle/getById?id=2aa72de3-6b9d-4c68-92f7-f369b2854a03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"vehicle",
+								"getById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2aa72de3-6b9d-4c68-92f7-f369b2854a03"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/vehicle/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"vehicle",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Punto de tuluá\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5291/api/location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/location/getById?id=1a729a31-a1bb-46d2-85c6-da07d7a38aae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"location",
+								"getById"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1a729a31-a1bb-46d2-85c6-da07d7a38aae"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/location/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"location",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HistoryVehicle",
+			"item": [
+				{
+					"name": "LinkVehicleToOrigin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\": \"d639b150-2350-49e0-9cb6-d7f4b050412b\",\r\n    \"originId\": \"e3eeb62d-3f43-4ee1-a0da-cdf45ece04c5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5291/api/historyVehicle/linkVehicleToOrigin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"historyVehicle",
+								"linkVehicleToOrigin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAvailabilityByOrigin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/historyVehicle/getAvailabilityByOrigin?origin=b0d024ef-384c-4a3f-8241-367c9b6ed862",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"historyVehicle",
+								"getAvailabilityByOrigin"
+							],
+							"query": [
+								{
+									"key": "origin",
+									"value": "b0d024ef-384c-4a3f-8241-367c9b6ed862"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterServiceVehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\": \"d639b150-2350-49e0-9cb6-d7f4b050412b\",\r\n    \"originId\": \"e3eeb62d-3f43-4ee1-a0da-cdf45ece04c5\",\r\n    \"destinationId\": \"b0d024ef-384c-4a3f-8241-367c9b6ed862\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5291/api/historyVehicle/registerServiceVehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"historyVehicle",
+								"registerServiceVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetActiveServiceByVehicleId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/historyVehicle/getActiveServiceByVehicleId?vehicleId=d639b150-2350-49e0-9cb6-d7f4b050412b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"historyVehicle",
+								"getActiveServiceByVehicleId"
+							],
+							"query": [
+								{
+									"key": "vehicleId",
+									"value": "d639b150-2350-49e0-9cb6-d7f4b050412b"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmEndOfServiceById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5291/api/historyVehicle/confirmEndOfServiceById?historyVehicleId=e6bcec3a-f980-4d72-81a8-c2fa5e276a7a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5291",
+							"path": [
+								"api",
+								"historyVehicle",
+								"confirmEndOfServiceById"
+							],
+							"query": [
+								{
+									"key": "historyVehicleId",
+									"value": "e6bcec3a-f980-4d72-81a8-c2fa5e276a7a"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Security\**" />
+    <Compile Remove="Entities\Task\**" />
+    <EmbeddedResource Remove="Entities\Security\**" />
+    <EmbeddedResource Remove="Entities\Task\**" />
+    <None Remove="Entities\Security\**" />
+    <None Remove="Entities\Task\**" />
+  </ItemGroup>
+
+</Project>
